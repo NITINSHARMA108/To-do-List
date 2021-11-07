@@ -1,0 +1,147 @@
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    overflow: hidden;
+}
+ul{
+    list-style-type:none;
+}
+
+.to-do-card{
+    display:none;
+    width:100%;
+    height:100%;
+    background-color:#aaa;
+    opacity:0.8;
+}
+.project-to-do-card{
+    display:none;
+    width:100%;
+    height:100%;
+    background-color:#aaa;
+    opacity:0.8;
+}
+.todo-creator-card{
+    border:2px solid white;
+    display:flex;
+    flex-direction:column;
+    
+    width:40%;
+    height:40%;
+    position:absolute;
+    top:30%;
+    left:30%;
+    padding:10px;
+}
+.todo-creator-card form{
+    display:flex;
+    flex-direction:column;
+    
+}
+.project-name{
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.todo-creator-card form > *{
+    margin:5px auto;
+    width:100%;
+    border-radius:5px;
+    border:1px solid black;
+    padding:10px auto;
+}
+
+.content{
+    width:100%;
+    height:100%; 
+   display:flex; 
+  
+}
+#project-form{
+    display:none;
+}
+.todoitem{
+    width:80%;
+    margin:auto;
+    display:flex;
+    border:5px solid rgb(255, 255, 255);
+    border-radius:10px;
+    padding:10px;
+    align-items:center;
+    justify-content: space-between;
+}
+#noteFormContainer{
+    /*visibility: hidden;
+*/  display:none;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    background-color: #aaa;
+    opacity:0.7;
+}
+.notes-form{
+    /*display:*/
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    background-color:cadetblue;
+    text-align: center;
+    margin:auto;
+}
+.notes-form > *{
+    margin:10px;
+}
+.individual-form-element{
+    display:flex;
+    flex-direction:column;
+}
+.sidenav{
+    width:20%;
+    background-color:beige;
+    height:90%;
+    overflow-y:auto;
+    padding-bottom:50px;
+    
+}
+#project-form{
+    display:none;
+    flex-direction: column;
+}
+#project-form input{
+    width:80%;
+    margin:auto;
+    border-radius:5px;
+    height:20px;
+}
+.main-content{
+    height:95%;
+    background-image:url('https://media.istockphoto.com/vectors/todo-list-seamless-pattern-universal-background-vector-id509927696');
+    width:80%;
+    overflow-y:auto;
+        
+}
+
+.individual-note{
+    border:5px solid white;
+    border-radius:10px;
+    padding:10px;
+    width:80%;
+    margin:10px auto ;
+}
+button{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    color:white;
+    border:1px solid white;
+    background-color:blue;
+    border-radius:10px;
+    text-align:center;
+    
+}
+
+
