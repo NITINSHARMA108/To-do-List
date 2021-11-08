@@ -177,9 +177,10 @@ function displayProjects(projects){
                     console.log(td);
                     const li=document.createElement('li');
                     li.setAttribute('class','todoitem');
+                    li.setAttribute('class','todoitem');
                     if(td.priority=='high')
                     {
-                        li.setAttribute('class','high-priority');
+                        li.setAttribute('class','todoitem high-priority');
                     }
                     //deleting functionality for checkbox todo and from project also
                     const checkbox=document.createElement('input');

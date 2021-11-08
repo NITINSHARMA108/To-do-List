@@ -208,7 +208,12 @@ document.getElementById('today').addEventListener('click',function(){
         if(todo.dueDate==getDate()){
             flag1=true;
             const li=document.createElement('li');
+            
             li.setAttribute('class','todoitem');
+            if(td.priority=='high')
+                {
+                    li.setAttribute('class','todoitem high-priority');
+                }
             const checkbox=document.createElement('input');
             checkbox.setAttribute('type','checkbox');
             checkbox.setAttribute('class','delete-todo');
@@ -278,6 +283,10 @@ document.getElementById('upcoming').addEventListener('click',function(){
             flag2=true;
             const li=document.createElement('li');
             li.setAttribute('class','todoitem');
+            if(td.priority=='high')
+            {
+                li.setAttribute('class','todoitem high-priority');
+            }
             const checkbox=document.createElement('input');
             checkbox.setAttribute('type','checkbox');
             checkbox.setAttribute('class','delete-todo');
