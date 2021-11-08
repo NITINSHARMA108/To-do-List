@@ -28,7 +28,7 @@ ul{
     flex-direction:column;
     
     width:40%;
-    height:40%;
+    /*height:40%;*/
     position:absolute;
     top:30%;
     left:30%;
@@ -52,6 +52,9 @@ ul{
     border:1px solid black;
     padding:10px auto;
 }
+.todo-creator-card form  label{
+    border-width:0px;
+}
 
 .content{
     width:100%;
@@ -64,13 +67,14 @@ ul{
 }
 .todoitem{
     width:80%;
-    margin:auto;
+    margin:10px auto;
     display:flex;
     border:5px solid rgb(255, 255, 255);
     border-radius:10px;
     padding:10px;
     align-items:center;
     justify-content: space-between;
+    overflow-x:hidden;
 }
 #noteFormContainer{
     /*visibility: hidden;
@@ -81,7 +85,7 @@ ul{
     align-items:center;
     margin:auto;
     background-color: #aaa;
-    opacity:0.7;
+    
 }
 .notes-form{
     /*display:*/
@@ -95,6 +99,7 @@ ul{
 .notes-form > *{
     margin:10px;
 }
+
 .individual-form-element{
     display:flex;
     flex-direction:column;
@@ -131,6 +136,11 @@ ul{
     padding:10px;
     width:80%;
     margin:10px auto ;
+    
+}
+.individual-form p{
+    display: flex;
+    overflow-x:hidden;
 }
 button{
     width:80%;
@@ -142,6 +152,15 @@ button{
     border-radius:10px;
     text-align:center;
     
+}
+#create-note{
+    width:95%;
+}
+.notes-form > input{
+    height:20px;
+}
+.high-priority{
+    border-color:yellow;
 }
 
 

@@ -37,8 +37,9 @@ const displayNotes=function(){
             localStorage.setItem('notes',JSON.stringify(allnotes));
             window.location.reload();
         })
+        h3.appendChild(i);
         li.appendChild(h3);
-        li.appendChild(i);
+        
         li.appendChild(p);
         ul.appendChild(li);
         

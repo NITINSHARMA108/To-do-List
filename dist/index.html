@@ -18,17 +18,21 @@
             <div class="todo-creator-card">
                 <h2>Create todo <span style="float:right;" id="closeDisplay"><i class="fas fa-times-circle"></i></span></h2>
                 <form>
+                    <label>Enter title</label>
                     <input type="text" placeholder="title" id="title">
-                    <textarea placeholder="description" id="desc"></textarea>
+                    <label>Enter Due Date</label>
                     <input type="date" id="dueDate">
+                    <label>Select Priority</label>
                     <select id="priority">
                         <option value="low">Low</option>
                         <option value="high">High</option>
                     </select>
+                    <label>Select Category</label>
                     <select id="category">
                         <option value="Personal">Personal</option>
                         <option value="Work">Work</option>
                     </select>
+                    <label>Select Project</label>
                     <select id="select-project">
                         <option value="none">none</option>
                     </select>
@@ -60,12 +64,12 @@
         </div>
         <div id="noteFormContainer">
             <form class="notes-form">
-                <h2>Create Note<span><i class="fas fa-times" id="closeNote"></i></span></h2>
+                <h2>Create Note<span style="float:right;"><i class="fas fa-times" id="closeNote"></i></span></h2>
                 <label for="note-title">Title</label>
                 <input type="text" id="note-title" placeholder="enter title for note">
                 <label for="note-description">Note Content</label>
                 <textarea rows="10" placeholder="Create note" id="note-description"></textarea>
-                <button type="button" id="create-note">Create Note</button>
+                <button type="submit" id="create-note">Create Note</button>
             </form>
         </div>
         

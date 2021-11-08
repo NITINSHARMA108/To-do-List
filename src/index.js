@@ -48,10 +48,10 @@ class Project{
 
 //Todo class
  class Todo{
-    constructor(title,description,dueDate,priority,category,pid){
+    constructor(title,dueDate,priority,category,pid){
         this.id=uuidv4();
         this.title=title;
-        this.description=description;
+        
         this.dueDate=dueDate;
         this.priority=priority;
         //this.project=project;
@@ -111,9 +111,9 @@ class Project{
 // creating Todo
 document.getElementById('createTodo').addEventListener('click',function(){
     console.log(document.getElementById('title').value);
-    console.log(document.getElementById('desc').value);
+    
     console.log(document.getElementById('select-project').value);
-    const obj1=new Todo(document.getElementById('title').value,document.getElementById('desc').value,document.getElementById('dueDate').value,document.getElementById('priority').value,document.getElementById('category').value,document.getElementById('select-project').value);
+    const obj1=new Todo(document.getElementById('title').value,document.getElementById('dueDate').value,document.getElementById('priority').value,document.getElementById('category').value,document.getElementById('select-project').value);
     document.querySelector('.to-do-card').style.display='none';
 });
 //cancel project
@@ -205,7 +205,7 @@ document.getElementById('today').addEventListener('click',function(){
         console.log(todo.dueDate);
         const comparisionDate=`${year}-${month+1}-0${date}`;
         console.log(comparisionDate);
-        if(todo.dueDate==comparisionDate){
+        if(todo.dueDate==getDate()){
             flag1=true;
             const li=document.createElement('li');
             li.setAttribute('class','todoitem');
@@ -220,6 +220,8 @@ document.getElementById('today').addEventListener('click',function(){
             })
             const div=document.createElement('div');
             div.appendChild(document.createTextNode(todo.title));
+            const div1=document.createElement('div');
+            div1.appendChild(document.createTextNode(todo.category));
             const p=document.createElement('p');
             p.appendChild(document.createTextNode(todo.dueDate));
             const i=document.createElement('i');
@@ -233,6 +235,7 @@ document.getElementById('today').addEventListener('click',function(){
             });
             li.appendChild(checkbox);
             li.appendChild(div);
+            li.appendChild(div1);
             li.appendChild(p);
             li.appendChild(i);
             ul.appendChild(li);
@@ -286,6 +289,8 @@ document.getElementById('upcoming').addEventListener('click',function(){
             })
             const div=document.createElement('div');
             div.appendChild(document.createTextNode(todo.title));
+            const div1=document.createElement('div');
+            div1.appendChild(document.createTextNode(todo.category));
             const p=document.createElement('p');
             p.appendChild(document.createTextNode(todo.dueDate));
             const i=document.createElement('i');
@@ -299,6 +304,7 @@ document.getElementById('upcoming').addEventListener('click',function(){
             });
             li.appendChild(checkbox);
             li.appendChild(div);
+            li.appendChild(div1);
             li.appendChild(p);
             li.appendChild(i);
             ul.appendChild(li);

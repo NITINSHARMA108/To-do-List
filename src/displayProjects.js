@@ -108,7 +108,7 @@ function displayProjects(projects){
                     li.setAttribute('class','todoitem');
                     if(td.priority=='high')
                     {
-                        li.setAttribute('class','high-priority');
+                        li.setAttribute('class','todoitem high-priority');
                     }
                     //deleting functionality for checkbox todo and from project also
                     const checkbox=document.createElement('input');
@@ -144,6 +144,7 @@ function displayProjects(projects){
                     });
                 li.appendChild(checkbox);
                 li.appendChild(div);
+                li.appendChild(div1);
                 li.appendChild(p);
                 li.appendChild(i);
                 ul.appendChild(li);
@@ -214,6 +215,7 @@ function displayProjects(projects){
                         });
                 li.appendChild(checkbox);
                 li.appendChild(div);
+                li.appendChild(div1);
                 li.appendChild(p);
                 li.appendChild(i);
                 ul1.appendChild(li);
